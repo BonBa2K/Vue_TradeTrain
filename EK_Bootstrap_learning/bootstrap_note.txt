@@ -1,0 +1,72 @@
+container:
+    Extra small Small   Medium  Large   X-Large    XX-Large
+    <576px      ≥576px  ≥768px  ≥992px  ≥1200px     ≥1400px
+    .container .container-sm
+    100%	    540px   720px	960px	1140px      1320px
+    .container-md 
+    100%	    100%    720px	960px	1140px      1320px
+    .container-lg
+    100%	    100%    100%	960px	1140px      1320px
+    .container-xl
+    100%	    100%    100%    100%	1140px      1320px
+    .container-xxl
+    100%	    100%    100%    100%	100%        1320px
+    .container-fluid
+    100%	    100%    100%    100%	100%        100%
+
+Grid options:
+    .col-xs-4 < 576px	
+    .col-sm-4 ≥ 576px	
+    .col-md-4 ≥ 768px	
+    .col-lg-4 ≥ 992px	
+    .col-xl-4 ≥ 1200px	
+    .col-xxl-4 ≥ 1400px
+
+padding:
+    {property}{sides}-{breakpoint}-{size} 
+    Example:
+        <div class="p-2 g-col-6">Grid item 1</div>
+    property:
+        m :margin
+        p :padding
+    sides:
+        t :margin-top/padding-top
+        b :margin-bottom/padding-bottom
+        x :both *-left and *-right
+        y :both *-top and *-bottom
+    breakpoint :
+        sm, md, lg, xl, and xxl
+    size :
+        0~5
+
+flex:
+    .d-flex
+    .d-inline-flex
+
+    .flex-row
+    .flex-row-reverse
+
+Justify content:
+    .justify-content-start
+    .justify-content-end
+    .justify-content-center
+    .justify-content-between
+    .justify-content-around
+    .justify-content-evenly
+
+Align items:
+    .align-items-start
+    .align-items-end
+    .align-items-center
+    .align-items-baseline
+    .align-items-stretch
+
+order:
+    .order-0
+    .order-1
+    .order-2
+    .order-3
+    .order-4
+    .order-12
+    .order-first (-1)
+    .order-last  (13)

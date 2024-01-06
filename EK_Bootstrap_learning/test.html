@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Coordinates Tracker</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+
+        #coordinates {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="coordinates">Mouse Coordinates: </div>
+
+    <script>
+        // 获取显示鼠标坐标的元素
+        var coordinatesElement = document.getElementById('coordinates');
+
+        // 添加鼠标移动事件监听器
+        document.addEventListener('mousemove', function (event) {
+            // 获取鼠标当前坐标
+            var mouseX = event.clientX;
+            var mouseY = event.clientY;
+
+            // 更新显示的坐标信息
+            coordinatesElement.innerText = 'Mouse Coordinates: ' + mouseX + ', ' + mouseY;
+            console.log('Mouse Coordinates: ' + mouseX + ', ' + mouseY);
+        });
+    </script>
+</body>
+
+</html>

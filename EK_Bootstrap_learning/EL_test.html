@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Coordinates Tracker</title>
+    <style>
+    </style>
+</head>
+
+<body>
+    <div id="JOJO">
+        <div id="test_1" style="font-size: 50px;">item 1</div>
+        <div id="test_2" style="font-size: 50px;">item 2</div>
+        <div id="test_3" style="font-size: 50px;">item 3</div>
+    </div>
+
+
+    <script>
+        const C_Array = Array.from(document.getElementById("JOJO").children)
+        C_Array.forEach(element => {
+            element.addEventListener(
+                "mouseenter",
+                (event) => {
+                    // highlight the mouseenter target
+                    event.target.style.color = "purple";
+                }
+            );
+            element.addEventListener(
+                "mouseleave",
+                (event) => {
+                    // highlight the mouseover target
+                    event.target.style.color = "orange";
+                }
+            );
+        });
+    </script>
+</body>
+
+</html>

@@ -1,22 +1,29 @@
 <template>
     <div class="tdtn_nav row align-items-center">
-        <a class="col-auto h-100 d-flex justify-content-start align-items-center" href="">
+        <router-link to="/" class="col-auto h-100 d-flex justify-content-start align-items-center">
             <img class="tdtn_logo h-75" src="..\assets\tdtn_logo.png" alt="">
-        </a>
+        </router-link>
         <div class="col d-flex justify-content-end align-items-center">
-            <div class="nav nav-pills">
-                <a class="nav-item d-flex justify-content-center align-items-center text-decoration-none" href="">
+            <nav class="nav nav-pills">
+                <router-link to="/" class="nav-item d-flex justify-content-center align-items-center text-decoration-none">
                     <div class="nav-link p-2">About Us</div>
-                </a>
-                <a class="nav-item d-flex justify-content-center align-items-center text-decoration-none" href="">
-                    <div class="nav-link p-2">About Us</div>
-                </a>
-                <a class="nav-item d-flex justify-content-center align-items-center text-decoration-none" href="">
+                </router-link>
+                <router-link to="/GameLounge"
+                    class="nav-item d-flex justify-content-center align-items-center text-decoration-none">
+                    <div class="nav-link p-2">Games</div>
+                </router-link>
+                <router-link to="/" class="nav-item d-flex justify-content-center align-items-center text-decoration-none">
+                    <div class="nav-link p-2">Tools</div>
+                </router-link>
+                <router-link to="/" class="nav-item d-flex justify-content-center align-items-center text-decoration-none">
+                    <div class="nav-link p-2">Academy</div>
+                </router-link>
+                <router-link to="/" class="nav-item d-flex justify-content-center align-items-center text-decoration-none">
                     <div class="nav-link p-2" style="line-height: 75%;">Connect<br>Wallet</div>
-                </a>
-                <a class="nav-item d-flex justify-content-center align-items-center text-decoration-none" href="">
+                </router-link>
+                <router-link to="/" class="nav-item d-flex justify-content-center align-items-center text-decoration-none">
                     <div class="nav-link p-2">Personal</div>
-                </a>
+                </router-link>
                 <div class="close_nav dropdown align-items-center">
                     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false">三</a>
                     <ul class="dropdown-menu dropdown-menu-dark">
@@ -29,7 +36,7 @@
                         <div><a class="dropdown-item" href="">Separated link</a></div>
                     </ul>
                 </div>
-            </div>
+            </nav>
         </div>
     </div>
 </template>

@@ -7,11 +7,11 @@ const routes = [
     path: '/',
     name: 'FirstPage',
     component: TT_FP
-  },
-  {
+  }, {
     path: '/GameLounge',
     name: 'GameLounge',
     component: TT_GL
+
   }
 ]
 

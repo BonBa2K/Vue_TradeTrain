@@ -6,26 +6,27 @@
         <div class="col d-flex justify-content-end align-items-center">
             <nav class="nav nav-pills">
                 <router-link to="/" class="nav-item d-flex justify-content-center align-items-center text-decoration-none">
-                    <div class="nav-link p-2">About Us</div>
+                    <div class="nav-link px-2 py-1">About Us</div>
                 </router-link>
                 <router-link to="/GameLounge"
                     class="nav-item d-flex justify-content-center align-items-center text-decoration-none">
-                    <div class="nav-link p-2">Games</div>
+                    <div class="nav-link px-2 py-1">Games</div>
                 </router-link>
                 <router-link to="/" class="nav-item d-flex justify-content-center align-items-center text-decoration-none">
-                    <div class="nav-link p-2">Tools</div>
+                    <div class="nav-link px-2 py-1">Tools</div>
                 </router-link>
                 <router-link to="/" class="nav-item d-flex justify-content-center align-items-center text-decoration-none">
-                    <div class="nav-link p-2">Academy</div>
+                    <div class="nav-link px-2 py-1">Academy</div>
                 </router-link>
                 <router-link to="/" class="nav-item d-flex justify-content-center align-items-center text-decoration-none">
-                    <div class="nav-link p-2" style="line-height: 75%;">Connect<br>Wallet</div>
+                    <div class="nav-link px-2 py-1" style="line-height: 75%;">Connect<br>Wallet</div>
                 </router-link>
                 <router-link to="/" class="nav-item d-flex justify-content-center align-items-center text-decoration-none">
-                    <div class="nav-link p-2">Personal</div>
+                    <div class="nav-link px-2 py-1">Personal</div>
                 </router-link>
-                <div class="close_nav dropdown align-items-center">
-                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false">三</a>
+                <div class="close_nav d-flex dropdown align-items-center">
+                    <a class="nav-link dropdown-toggle py-0" data-bs-toggle="dropdown" role="button"
+                        aria-expanded="false">三</a>
                     <ul class="dropdown-menu dropdown-menu-dark">
                         <div><a class="dropdown-item" href="">Action</a></div>
                         <div><a class="dropdown-item" href="">Another action</a></div>
@@ -44,23 +45,15 @@
 <script></script>
 
 <style scoped>
-@media screen and (orientation: landscape) {
+@media screen and (max-width: 520px) and (orientation: portrait) {
     .nav-link {
-        font-size: 3vh;
-    }
-
-    .tdtn_nav {
-        height: 15vh;
+        font-size: min(1vh, 7px);
     }
 }
 
-@media screen and (orientation: portrait) {
+@media screen and (min-width: 521px) and (orientation: portrait) {
     .nav-link {
-        font-size: 2vw;
-    }
-
-    .tdtn_nav {
-        height: 5vh;
+        font-size: 13px;
     }
 }
 
@@ -69,12 +62,8 @@
 }
 
 .tdtn_nav {
+    height: 35px;
     background-color: rgba(67, 61, 51, .7);
-}
-
-.close_nav {
-    background-color: rgba(67, 61, 51, 0.879);
-
 }
 
 .nav-link:hover {

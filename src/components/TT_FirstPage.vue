@@ -4,45 +4,50 @@
             <div class="card-body p-0 d-flex flex-column justify-content-center align-items-center" style="height: 30%;">
                 <img src="..\assets\BlackSmith.png" class="card-img-top" alt="">
             </div>
-            <a class="card-title m-0 card-body p-0 d-flex flex-row justify-content-center align-items-center text-decoration-none w-100"
-                href="" style="height: 25%;">
+            <router-link
+                class="card-title m-0 card-body p-0 d-flex flex-row justify-content-center align-items-center text-decoration-none w-100"
+                to="" style="height: 25%;">
                 <img src="..\assets\trade.png" alt="">
                 <div class="m-0 card_word">Trading<br> Academy</div>
-            </a>
+            </router-link>
             <ul class="list-group p-0  list-group-flush justify-content-center" style="height: 45%;">
-                <a class="p-0 card_word list-group-item list-group-item-action" href="">- Course -</a>
-                <a class="p-0 card_word list-group-item list-group-item-action" href="">- Forum -</a>
+                <router-link class="p-0 card_word list-group-item list-group-item-action" to="">- Course -</router-link>
+                <router-link class="p-0 card_word list-group-item list-group-item-action" to="">- Forum -</router-link>
             </ul>
         </div>
         <div class="card">
             <div class="card-body p-0 d-flex flex-column justify-content-center align-items-center" style="height: 30%;">
                 <img src="..\assets\tdtn_logo.png" class="card-img-top" alt="">
             </div>
-            <a class="card-title m-0 card-body p-0 d-flex flex-row justify-content-center align-items-center text-decoration-none w-100"
-                href="" style="height: 25%;">
+            <router-link
+                class="card-title m-0 card-body p-0 d-flex flex-row justify-content-center align-items-center text-decoration-none w-100"
+                to="/GameLounge" style="height: 25%;">
 
                 <img src="..\assets\lobby.png" alt="">
-                <div class="m-0 card_word text-decoration-none" href="">Trading<br> Game</div>
-            </a>
+                <div class="m-0 card_word text-decoration-none" to="">Trading<br> Game</div>
+            </router-link>
             <ul class="list-group p-0 list-group-flush justify-content-center" style="height: 45%;">
-                <a class="p-0 card_word list-group-item list-group-item-action" href="">- Light Mode -</a>
-                <a class="p-0 card_word list-group-item list-group-item-action" href="">- Mission Mode -</a>
-                <a class="p-0 card_word list-group-item list-group-item-action" href="">- Free Mode -</a>
-                <a class="p-0 card_word list-group-item list-group-item-action" href="">- Competition -</a>
+                <router-link class="p-0 card_word list-group-item list-group-item-action" to="">- Light Mode -</router-link>
+                <router-link class="p-0 card_word list-group-item list-group-item-action" to="">- Mission Mode
+                    -</router-link>
+                <router-link class="p-0 card_word list-group-item list-group-item-action" to="">- Free Mode -</router-link>
+                <router-link class="p-0 card_word list-group-item list-group-item-action" to="">- Competition
+                    -</router-link>
             </ul>
         </div>
         <div class="card">
             <div class="card-body p-0 d-flex flex-column justify-content-center align-items-center" style="height: 30%;">
                 <img src="..\assets\EX_1.png" class="card-img-top" alt="">
             </div>
-            <a class="card-title m-0 card-body p-0 d-flex flex-row justify-content-center align-items-center text-decoration-none w-100"
-                href="" style="height: 25%;">
+            <router-link
+                class="card-title m-0 card-body p-0 d-flex flex-row justify-content-center align-items-center text-decoration-none w-100"
+                to="" style="height: 25%;">
                 <img src="..\assets\NFT.png" alt="">
-                <div class="m-0 card_word text-decoration-none" href="">Trading<br> Tool</div>
-            </a>
+                <div class="m-0 card_word text-decoration-none" to="">Trading<br> Tool</div>
+            </router-link>
             <ul class="list-group p-0 list-group-flush justify-content-center" style="height: 45%;">
-                <a class="p-0 card_word list-group-item list-group-item-action" href="">-Trading Bot-</a>
-                <a class="p-0 card_word list-group-item list-group-item-action" href="">-Copy Trade-</a>
+                <router-link class="p-0 card_word list-group-item list-group-item-action" to="">-Trading Bot-</router-link>
+                <router-link class="p-0 card_word list-group-item list-group-item-action" to="">-Copy Trade-</router-link>
             </ul>
         </div>
     </div>
@@ -51,9 +56,6 @@
 </script>
 <style scoped>
 @media screen and (orientation: landscape) {
-    .three_card {
-        height: 77vh;
-    }
 
     .card {
         height: 39.5vw;
@@ -69,7 +71,6 @@
 @media screen and (orientation: portrait) {
     .three_card {
         flex-direction: column;
-        height: 87vh;
     }
 
     .card {
@@ -82,6 +83,10 @@
     .card_word {
         font-size: 2vh;
     }
+}
+
+.three_card {
+    height: calc(100% - 70px);
 }
 
 .list-group-flush .list-group-item {

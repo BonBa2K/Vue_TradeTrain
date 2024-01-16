@@ -1,8 +1,7 @@
 <template>
   <TT_Header />
-  <router-view/>
-  <TT_Footer />
-  
+  <router-view />
+  <TT_Footer id="foot"></TT_Footer>
 </template>
 
 <script>
@@ -38,5 +37,13 @@ body {
   padding: 0;
   font-family: Arial, Noto Sans TC, sans-serif;
   font-weight: 700;
+}
+
+#foot {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+  /* Footer height */
 }
 </style>

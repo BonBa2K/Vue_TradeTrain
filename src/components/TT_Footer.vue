@@ -1,5 +1,5 @@
 <template>
-    <footer class="d-flex justify-content-end align-items-center" style=" height:5vh">
+    <footer class="d-flex justify-content-end align-items-center" style=" height:35px">
         <div id="footer_word" style="color: #fdd0608b;">Copyright © 2023 TradingTrain.
             All rights
             reserved.</div>
@@ -8,15 +8,7 @@
 <script>
 </script>
 <style scoped>
-@media screen and (orientation: landscape) {
-    #footer_word {
-        font-size: 3vh;
-    }
-}
-
-@media screen and (orientation: portrait) {
-    #footer_word {
-        font-size: 2vw;
-    }
+#footer_word {
+    font-size: 13px;
 }
 </style>

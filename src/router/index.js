@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import TT_FP from '../components/TT_FirstPage.vue'
-import TT_GL from '../components/TT_GameLounge.vue'
+import TT_FP from '../components/Test_FirstPage.vue'
+import TT_GL from '../components/Test_GameLounge.vue'
 
 const routes = [
   {

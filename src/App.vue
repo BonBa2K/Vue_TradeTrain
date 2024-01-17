@@ -1,12 +1,12 @@
 <template>
-  <TT_Header />
+  <TT_Header id="header_area"></TT_Header>
   <router-view />
   <TT_Footer id="foot"></TT_Footer>
 </template>
 
 <script>
-import TT_H from './components/TT_Header.vue'
-import TT_F from './components/TT_Footer.vue'
+import TT_H from './components/Test_Header.vue'
+import TT_F from './components/Test_Footer.vue'
 
 export default {
   name: 'App',
@@ -39,11 +39,18 @@ body {
   font-weight: 700;
 }
 
+#header_area {
+  position: absolute;
+  height: 110px;
+  top: 15px;
+  left: 0;
+  right: 0;
+}
+
 #foot {
   position: absolute;
-  bottom: 0;
+  bottom: 10px;
   width: 100%;
   height: 2.5rem;
-  /* Footer height */
 }
 </style>
